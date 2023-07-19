@@ -1,0 +1,61 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: grey;
+  font-weight: 600;
+}
+
+.title {
+  padding-left: 20px;
+}
+
+.navbar {
+ margin-left: auto;
+}
+
+a {
+  margin: 20px;
+}
+
+.content {
+  height: 100vh;
+  padding: 100px;
+  width: auto;
+  background-color: gray;
+}
+
+.greeting__container {
+  width: 750px;
+}
+
+.greeting__header {
+  font-size: 110px;
+  margin: 0;
+}
+
+.greeting {
+  font-size: 30px;
+}
+
+.profile__image {
+  height: 425px;
+  width: 360px;
+  margin-left: 40px;
+  margin: 0 auto;
+}
+
+
+
