@@ -1,0 +1,66 @@
+.greeting__container {
+  width: 750px;
+}
+
+.greeting__header {
+  font-size: 110px;
+  margin: 0;
+}
+
+.greeting {
+  font-size: 30px;
+}
+
+.profile__image {
+  height: 425px;
+  width: 360px;
+  margin-left: 40px;
+  margin: 0 auto;
+}
+
+.contact__button {
+  height: 50px;
+  width: 185px;
+  border-radius: 20px;
+}
+
+.projects__button {
+  height: 50px;
+  width: 185px;
+  border-radius: 20px;
+}
+
+@media (min-width: 450px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .col {
+    align-self: center;
+  }
+  .greeting__header {
+    
+  }
+}
+
+@media (min-width: 769px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .col {
+    align-self: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .title {
+    margin-right: auto;
+  }
+}

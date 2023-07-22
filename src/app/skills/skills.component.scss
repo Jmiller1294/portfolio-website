@@ -1,0 +1,71 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 500px;
+  flex: 1;
+}
+
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  margin-top: 200px;
+}
+
+.title {
+  align-self: center;
+}
+
+.myProgress {
+  height: 15px;
+  width: 500px;
+  background-color: black;
+  border-radius: 20px;
+  align-self: flex-end;
+}
+
+.myBar {
+  width: 85%;
+  height: 15px;
+  background-color: green;
+  border-radius: 20px;
+}
+
+.skill__container {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+}
+
+.skill__text {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-basis: 100%;
+  height: 15px;
+  width: 500px;
+}
+
+.skill__bar {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  flex: 1;
+}
+
+.skill__years {
+}
+
+.skill__name {
+  flex: 1;
+}
+
+
