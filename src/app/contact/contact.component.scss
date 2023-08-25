@@ -1,0 +1,36 @@
+.contact__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  margin-top: 150px;
+}
+
+form {
+  width: 50%;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+}
+
+.form__control {
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.form__label {
+  margin-bottom: 5px;
+}
+
+button {
+  height: 35px;
+  width: 20%;
+}
+
+#comments {
+  height: 150px;
+}

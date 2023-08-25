@@ -1,0 +1,29 @@
+<div class="contact__container">
+  <h1>Contact Me</h1>
+  <form [formGroup]="contactForm">
+    <div class="form__group">
+      <label class="form__label">First Name</label>
+      <input
+        class="form__control"
+        formControlName=firstName
+        type="text" />
+      <label class="form__label">Last Name</label>
+      <input 
+        class="form__control"
+        type="text" />
+      <label class="form__label">Email</label>
+      <input 
+        class="form__control"
+        type="text" />
+      <label class="form__label">Comments</label>
+      <textarea 
+        id="comments"
+        class="form__control"
+        type="text">
+      </textarea>
+      <button 
+        class="form__button"
+      >Send Message</button>
+    </div>
+  </form>
+</div>
