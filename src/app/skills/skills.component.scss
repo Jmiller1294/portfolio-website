@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   height: auto;
-  margin-top: 70px;
+  padding-bottom: 150px;
 }
 
 .title {
@@ -25,7 +25,7 @@
 }
 
 .myProgress {
-  height: 15px;
+  height: 25px;
   width: 500px;
   background-color: black;
   border-radius: 20px;
@@ -34,7 +34,7 @@
 
 .myBar {
   width: 85%;
-  height: 15px;
+  height: 25px;
   background-color: green;
   border-radius: 20px;
 }
@@ -43,6 +43,7 @@
   display: flex;
   flex-direction: column;
   height: 450px;
+  padding: 20px;
 }
 
 .skill__text {
