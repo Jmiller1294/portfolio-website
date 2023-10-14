@@ -14,7 +14,11 @@
 
 .greeting {
   font-size: 30px;
-  margin-top: 10px;
+  margin-top: 30px;
+}
+
+.typed-container {
+  height: 100px;
 }
 
 .typed-element {
@@ -28,16 +32,35 @@
   margin: 0 auto;
 }
 
-.contact__button {
-  height: 50px;
-  width: 185px;
-  border-radius: 20px;
-}
-
 .projects__button {
   height: 50px;
   width: 185px;
-  border-radius: 20px;
+  font-size: 16px;
+  color: #f5f5f5;
+  font-weight: 550;
+  background-color: #1b242f;
+  border: 2px solid #f5f5f5;
+  margin-right: 10px;
+
+  &:hover {
+    background-color: #BB98B5;
+    cursor: pointer;
+  }
+}
+
+.contact__button {
+  height: 50px;
+  width: 185px;
+  font-size: 16px;
+  color: #f5f5f5;
+  font-weight: 550;
+  background-color: #1b242f;
+  border: 2px solid #f5f5f5;
+
+  &:hover {
+    background-color: #BB98B5;
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 450px) {

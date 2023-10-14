@@ -1,23 +1,60 @@
-<div class="projects__container">
-  <h1 class="title">Projects</h1>
-  <div class="row">
-    <iframe class="project__video"
-      src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
-    <iframe class="project__video"
-      src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
-    <iframe class="project__video"
-      src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
-    <iframe class="project__video"
-      src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
-    <iframe class="project__video"
-      src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
-    <iframe class="project__video"
-      src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
-  </div>
+<div class="projects__container" (appear)="onAppear()">
+  <h1 class="title">PROJECTS</h1>
+  <div class="header__bar">&nbsp;</div>
+    <div class="videos__container" @fadeSlideIn *ngIf="hasAppeared">
+      <div class="card">
+        <img src="../../assets/website-card.jpg" class="card__image" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+          <button class="card__button" (click)="openModal(modalTemplate)">Learn More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../assets/website-card.jpg" class="card__image" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+          <button class="card__button">Learn More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../assets/website-card.jpg" class="card__image" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+          <button class="card__button">Learn More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../assets/website-card.jpg" class="card__image" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+          <button class="card__button">Learn More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../assets/website-card.jpg" class="card__image" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+          <button class="card__button">Learn More</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="../../assets/website-card.jpg" class="card__image" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+          <button class="card__button">Learn More</button>
+        </div>
+      </div>
+    </div>
 </div>
+
+<ng-template #modalTemplate>
+  <div>
+    This is the modal
+  </div>
+</ng-template>

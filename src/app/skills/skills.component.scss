@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .row {
   display: flex;
   flex-direction: row;
@@ -9,41 +13,51 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 500px;
+  height: 400px;
   flex: 1;
 }
 
 .skills__container {
   display: flex;
   flex-direction: column;
-  height: auto;
-  padding-bottom: 150px;
+  height: 900px;
+  padding: 130px;
 }
 
 .title {
-  align-self: center;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.header__bar {
+  background: black;
+  height: 4px;
+  margin: 0 auto;
+  width: 60px;
 }
 
 .myProgress {
-  height: 25px;
-  width: 500px;
-  background-color: black;
+  height: 15px;
+  width: 400px;
+  background-color: #ddddd8;
   border-radius: 20px;
   align-self: flex-end;
 }
 
 .myBar {
-  width: 85%;
-  height: 25px;
-  background-color: green;
+  height: 15px;
+  background-color: #BB98B5;
   border-radius: 20px;
 }
 
 .skill__container {
   display: flex;
   flex-direction: column;
-  height: 450px;
-  padding: 20px;
+  height: 37px;
+  width: 68%;
+  
 }
 
 .skill__text {
@@ -67,6 +81,71 @@
 
 .skill__name {
   flex: 1;
+}
+
+.icon__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 300px;
+  padding: 30px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 750px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.hex2 {
+  height: 170px;
+  width: 170px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.hex2::before {
+  position: relative;
+  display: block;
+  content: "\2B22";
+  color: #BB98B5;
+  font-size: 200px;
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+  text-align: center;
+  height: 300px;
+  width: 15%;
+}
+
+.image {
+  position: absolute;
+  font-size: 48px;
+  top: 125px;
+  left: 63px;
+}
+
+p {
+  text-align: center;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+.text {
+  width: 150px;
 }
 
 

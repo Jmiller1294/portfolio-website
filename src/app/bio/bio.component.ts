@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import Typed from 'typed.js';
 
@@ -8,7 +9,7 @@ import Typed from 'typed.js';
 })
 export class BioComponent implements OnInit {
 
-  constructor() { }
+  constructor(private scroller: ViewportScroller) { }
 
   ngOnInit(): void {
     const options = {
@@ -21,6 +22,11 @@ export class BioComponent implements OnInit {
     };
 
     const typed = new Typed('.typed-element', options);
+  }
+
+  scroll(elementId: string): void {
+    console.log('hiy')
+    this.scroller.scrollToAnchor(elementId);
   }
 
 }

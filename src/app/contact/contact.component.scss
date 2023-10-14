@@ -4,13 +4,12 @@
   align-items: center;
   flex-direction: column;
   height: auto;
-  margin-top: 150px;
-  background-color: #252934;
+  background-color: #3A3F51;
   color: #ffffff;
 }
 
 form {
-  width: 50%;
+  width: 40%;
 }
 
 .form__group {
@@ -20,7 +19,7 @@ form {
 }
 
 .form__control {
-  height: 25px;
+  height: 30px;
   margin-bottom: 20px;
 }
 
@@ -29,8 +28,17 @@ form {
 }
 
 button {
-  height: 35px;
-  width: 20%;
+  height: 40px;
+  width: 25%;
+  background-color: #3A3F51;
+  color: #f5f5f5;
+  border: 2px solid #f5f5f5;
+  font-size: 16px;
+
+  &:hover {
+    background-color: #BB98B5;
+    cursor: pointer;
+  }
 }
 
 #comments {

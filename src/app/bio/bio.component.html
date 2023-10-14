@@ -1,14 +1,16 @@
 <div class="bio__container">
   <div class="row">
     <div class="primary col">
-      <span class="typed-element"></span> 
+     <div class="typed-container">
+      <span class="typed-element"></span>
+    </div>
       <p class="greeting">
         A Full Stack Web Developer from New York City.<br>
         Passion for creating quality software and working<br>
         with great people.
       </p>
-      <button class="contact__button">Contact Me</button>
-      <button class="projects__button">My Projects</button>
+      <button class="projects__button" (click)="scroll('projects')">My Projects</button>
+      <button class="contact__button" (click)="scroll('contact')">Contact Me</button>
     </div>
     <div class="secondary col">
       <img src="../assets/dog-placeholder.jpg" class="profile__image">
