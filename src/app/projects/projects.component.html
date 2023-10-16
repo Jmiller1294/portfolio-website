@@ -1,6 +1,6 @@
 <div class="projects__container" (appear)="onAppear()">
   <h1 class="title">PROJECTS</h1>
-  <div class="header__bar">&nbsp;</div>
+  <div class="header__bar" *ngIf="hasAppeared" @fadeSlide>&nbsp;</div>
     <div class="videos__container" @fadeSlideIn *ngIf="hasAppeared">
       <div class="card">
         <img src="../../assets/website-card.jpg" class="card__image" alt="Avatar" style="width:100%">

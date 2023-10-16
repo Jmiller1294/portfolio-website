@@ -1,8 +1,8 @@
 <div class="skills__container" (appear)="onAppear()">
   <h1 class="title">Skills</h1>
-  <div class="header__bar">&nbsp;</div>
-    <div *ngIf="hasAppeared"> 
-      <div class="icon__container" @fade> 
+  <div class="header__bar" *ngIf="hasAppeared" @fadeSlideIn>&nbsp;</div>
+    <div> 
+      <div class="icon__container" *ngIf="hasAppeared" @fade> 
         <div class="parent">
           <div class="hex2"></div>
           <i class="image fa-solid fa-laptop fa-2xl" style="color: #ffffff;"></i>
@@ -30,7 +30,7 @@
       </div>
       <div class="container">
         <div class="col">
-          <p @fadeSlideIn>
+          <p @fadeSlideIn *ngIf="hasAppeared">
             sfdgfdgdfgdfgfdgdfgf
             dfgdfgdfgdfgdrfgdfgfd
             dfgdfgdfgdfgdfgdfgdfg
@@ -44,14 +44,14 @@
             dfgdfgfdgdfgdfgdfgdfgdfg
           </p>
         </div>
-        <div class="col">
+        <div class="col" *ngIf="hasAppeared" @fadeIn>
           <div class="skill__container">
             <div class="skill__text">
               <span class="skill__name">Skill 1</span>
             </div>
             <div class="skill__bar">
               <div class="myProgress">
-                <div class="myBar" [@loading]="progress === 0 ? 'start':'end'"></div>
+                <div class="myBar" [@loading]="progress === 0 ? 'start':'end1'"></div>
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@
             </div>
             <div class="skill__bar">
               <div class="myProgress">
-                <div class="myBar" [@loading]="progress === 0 ? 'start':'end'"></div>
+                <div class="myBar" [@loading]="progress === 0 ? 'start':'end2'"></div>
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@
             </div>
             <div class="skill__bar">
               <div class="myProgress">
-                <div class="myBar" [@loading]="progress === 0 ? 'start':'end'"></div>
+                <div class="myBar" [@loading]="progress === 0 && hasAppeared ? 'start':'end3'"></div>
               </div>
             </div>
           </div>
@@ -81,7 +81,7 @@
             </div>
             <div class="skill__bar">
               <div class="myProgress">
-                <div class="myBar" [@loading]="progress === 0 ? 'start':'end'"></div>
+                <div class="myBar" [@loading]="progress === 0 ? 'start':'end4'"></div>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@
             </div>
             <div class="skill__bar">
               <div class="myProgress">
-                <div class="myBar" [@loading]="progress === 0 ? 'start':'end'"></div>
+                <div class="myBar" [@loading]="progress === 0 ? 'start':'end5'"></div>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@
             </div>
             <div class="skill__bar">
               <div class="myProgress">
-                <div class="myBar" [@loading]="progress === 0 ? 'start':'end'"></div>
+                <div class="myBar" [@loading]="progress === 0 ? 'start':'end6'"></div>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@
             </div>
             <div class="skill__bar">
               <div class="myProgress">
-                <div class="myBar" [@loading]="progress === 0 ? 'start':'end'"></div>
+                <div class="myBar" [@loading]="progress === 0 ? 'start':'end7'"></div>
               </div>
             </div>
           </div>

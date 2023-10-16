@@ -1,8 +1,7 @@
 <div class="timeline__container" (appear)="onAppear()"> 
   <h1 class="title">TIMELINE</h1>
-  <div class="header__bar">&nbsp;</div>
+  <div class="header__bar" *ngIf="hasAppeared" @fadeSlide>&nbsp;</div>
   <div class="timeline" @fadeSlideInLeft @fadeSlideInRight *ngIf="hasAppeared">
-    <div></div>
     <div class="container left">
       <div class="content-left">
         <h2>2017</h2>

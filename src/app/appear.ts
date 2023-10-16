@@ -21,17 +21,16 @@ export class AppearDirective implements AfterViewInit, OnDestroy {
   subscriptionResize: Subscription | any;
 
   constructor(private element: ElementRef) {
-      this.appear = new EventEmitter<void>();
+    this.appear = new EventEmitter<void>();
   }
 
   saveDimensions() {
-      this.elementPos = this.getOffsetTop(this.element.nativeElement);
-      this.elementHeight = this.element.nativeElement.offsetHeight;
-      this.windowHeight = window.innerHeight;
+    this.elementPos = this.getOffsetTop(this.element.nativeElement);
+    this.elementHeight = this.element.nativeElement.offsetHeight;
+    this.windowHeight = window.innerHeight;
   }
   saveScrollPos() {
-      this.scrollPos = window.scrollY;
-      console.log('scroll', this.scrollPos);
+    this.scrollPos = window.scrollY;
   }
   getOffsetTop(element: any) {
       let offsetTop = element.offsetTop || 0;
@@ -51,8 +50,7 @@ export class AppearDirective implements AfterViewInit, OnDestroy {
       }
   }
   isVisible() {
-    console.log(this.elementPos)
-      return this.scrollPos >= this.elementPos || (this.scrollPos + this.windowHeight) >= (this.elementPos + this.elementHeight);
+    return this.scrollPos >= this.elementPos || (this.scrollPos + this.windowHeight) >= (this.elementPos + this.elementHeight) - 650;
   }
 
   subscribe() {
@@ -68,18 +66,18 @@ export class AppearDirective implements AfterViewInit, OnDestroy {
           });
   }
   unsubscribe() {
-      if (this.subscriptionScroll) {
-          this.subscriptionScroll.unsubscribe();
-      }
-      if (this.subscriptionResize) {
-          this.subscriptionResize.unsubscribe();
-      }
+    if (this.subscriptionScroll) {
+        this.subscriptionScroll.unsubscribe();
+    }
+    if (this.subscriptionResize) {
+        this.subscriptionResize.unsubscribe();
+    }
   }
 
   ngAfterViewInit() {
-      this.subscribe();
+    this.subscribe();
   }
   ngOnDestroy() {
-      this.unsubscribe();
+    this.unsubscribe();
   }
 }

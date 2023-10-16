@@ -6,9 +6,20 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.scss'],
   animations: [
+    trigger('fadeSlide', [
+      transition(':enter', [
+        style({ opacity: 0, transform: 'translateX(-70px)'}),
+        animate('300ms ease-in-out', 
+        style({ opacity: 1, transform: 'translateX(0)'}))
+      ]),
+      transition(':leave', [
+        animate('300ms ease-in-out', 
+        style({ opacity: 0, transform: 'translateX(-70px)'}))
+      ])
+    ]),
     trigger('fadeSlideInLeft', [
-      transition('void <=> *', [
-        query('.content-left', style({ opacity: 0, transform: 'translateX(-70px)' })),
+      transition('void => *', [
+        query('.content-left', style({ opacity: 0, transform: 'translateX(-150px)' })),
 
         query('.content-left', stagger('200ms', [
           animate('300ms ease-out', style({ opacity: 1, transform: 'translateX(0)' }))
@@ -16,8 +27,8 @@ import { Component, OnInit } from '@angular/core';
       ])
     ]),
     trigger('fadeSlideInRight', [
-      transition('void <=> *', [
-        query('.content-right', style({ opacity: 0, transform: 'translateX(70px)' })),
+      transition('void => *', [
+        query('.content-right', style({ opacity: 0, transform: 'translateX(150px)' })),
 
         query('.content-right', stagger('200ms', [
           animate('300ms ease-out', style({ opacity: 1, transform: 'translateX(0)' }))

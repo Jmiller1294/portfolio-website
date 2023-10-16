@@ -1,6 +1,7 @@
-<div class="contact__container">
-  <h1>Contact Me</h1>
-  <form [formGroup]="contactForm">
+<div class="contact__container" (appear)="onAppear()">
+  <h1 class="title">Contact Me</h1>
+  <div class="header__bar" *ngIf="hasAppeared" @fadeSlide>&nbsp;</div>
+  <form [formGroup]="contactForm" *ngIf="hasAppeared" @fadeSlideGrowKeyFrame>
     <div class="form__group">
       <label class="form__label">First Name</label>
       <input
@@ -23,7 +24,7 @@
       </textarea>
       <button 
         class="form__button"
-      >Submit</button>
+      >SUBMIT</button>
     </div>
   </form>
 </div>
